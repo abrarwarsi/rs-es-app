@@ -1,0 +1,1 @@
+{"root":["./src/index.ts","./src/controllers/players.controller.ts","./src/middlewares/error.middleware.ts","./src/middlewares/validate.middleware.ts","./src/routes/players.route.ts","./src/tests/players.test.ts","./src/utils/config.ts","./src/validators/players.validator.ts"],"version":"5.8.3"}
