@@ -1,11 +1,7 @@
 import express from 'express';
-import dotenv from 'dotenv';
 import cors from 'cors';
 import playersRouter from './routes/players.route';
 import errorHandler from './middlewares/error.middleware';
-import config from './utils/config';
-
-dotenv.config({ path: `.env.${process.env.NODE_ENV || 'development'}` });
 
 const app = express();
 
@@ -15,6 +11,10 @@ app.use(express.urlencoded({ extended: true }));
 app.use('/', playersRouter);
 app.use(errorHandler);
 
-app.listen(config.PORT, () => {
-  console.log(`Server running on port ${config.PORT}`);
-});
+export = app;
+
+// For local only
+if (process.env.NODE_ENV !== 'production') {
+  const PORT = process.env.PORT || 3000;
+  app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
+}
