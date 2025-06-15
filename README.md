@@ -17,8 +17,8 @@ A simple Express + TypeScript API that fetches tennis player statistics from a p
 ### 1. Clone the repository
 
 ```bash
-git clone https://github.com/<your-username>/players-api.git
-cd players-api
+git clone https://github.com/abrarwarsi/rs-es-app.git
+cd rs-es-app
 ```
 
 ---
@@ -104,7 +104,7 @@ Path: .github/workflows/test.yml
 
 ## 📁 Folder Structure
 
-```css
+```text
 src/
 ├── controllers/
 ├── routes/
@@ -124,6 +124,12 @@ node_modules/
 .env.development
 .env.production
 ```
+
+---
+
+## 🌐 Live Deployed Version
+
+You can find the live deployed version of the API at https://rs-es-app.onrender.com/
 
 ---
 
